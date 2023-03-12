@@ -14,16 +14,46 @@ body {
   height: 100vh;
   overflow: hidden;
   margin: 0;
+  padding: 20px;
 }
 
 .container {
   background-color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 500px;
+  text-align: center;
+  max-width: 800px;
   min-height: 300px;
-  padding: 50px;
+  padding: 50px 40px;
   border-radius: 10px;
   box-shadow: 10px 5px 5px #000;
+}
+
+h3 {
+  font-size: 14px;
+  margin: 0;
+  opacity: 0.6;
+  letter-spacing: 2px;
+}
+
+.joke {
+  font-size: 16px;
+  letter-spacing: 0.4px;
+  line-height: 40px;
+  margin: 40px auto;
+  max-width: 600px;
+}
+
+.btn {
+  cursor: pointer;
+  background-image: linear-gradient(90deg, #be2596, #9925be);
+  border: 0;
+  border-radius: 10px;
+  color: #fff;
+  padding: 15px 40px;
+  box-shadow: 6px 3px 11px rgba(0, 0, 0, 0.4);
+  transition: 0.2s ease;
+}
+
+.btn:active {
+  transform: scale(0.98);
+  box-shadow: 6px 3px 5px rgba(0, 0, 0, 0.6);
 }
