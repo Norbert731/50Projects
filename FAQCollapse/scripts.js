@@ -1,8 +1,18 @@
+const toggles = document.querySelectorAll(".btn");
 const questions = document.querySelectorAll(".question");
-const qBtn = document.querySelector(".btn");
 
-questions.forEach((question) => {
-  qBtn?.addEventListener("click", () => {
-    question.classList.add("show");
+toggles.forEach((toggler) => {
+  toggler.addEventListener("click", (idx) => {
+    contentToggler(idx);
   });
 });
+
+function contentToggler(idx) {
+  questions.forEach((question, index) => {
+    if (index === idx) {
+      question.classList.add("show");
+    } else {
+      console.log("error");
+    }
+  });
+}
