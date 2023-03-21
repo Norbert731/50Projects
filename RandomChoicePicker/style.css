@@ -19,6 +19,7 @@ body {
 h3 {
   color: #fff;
   margin: 10px 0 20px;
+  text-align: center;
 }
 
 .container {
@@ -38,10 +39,20 @@ textarea {
 
 #tags {
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .tag {
   padding: 10px 20px;
-  height: 100px;
+  margin: 3px;
   border-radius: 20px;
+  background-color: #30c975;
+}
+
+.tag.highlight {
+  background-color: #239757;
+  color: #fff;
 }
